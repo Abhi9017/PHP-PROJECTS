@@ -1,0 +1,365 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    min-height: 100vh;
+    background: #f7f7f7;
+}
+.wrapper{
+    background: #fff;
+    width:450px;
+    border-radius:16px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1), 
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
+
+/* signup  css code */
+.form{
+	
+    padding:25px 30px;
+}
+.form header{
+    font-size:25px;
+    font-weight:600;
+    border-bottom:px solid #e6e6e6;
+    padding-bottom: 10px;
+
+}
+.form form{
+    margin: :20px 0;
+
+}
+
+.form form .error-txt{
+    color: #721c74;
+    background: #f8d7da;
+    padding:8px 10px;
+    text-align:center;
+    border-radius:5px;
+    border:1px solid #f5c6cb;
+    margin-bottom:10px;
+	display:none;
+}
+.logout{
+    margin-right: 100px;
+}
+
+.form form .field{
+    display:flex;
+    flex-direction:column;
+    margin: bottom 10px;
+    position:relative;
+}.form form .field input{
+      outline:none;
+}
+.form form .input input{
+    height:40px;
+    width:100%;
+    padding:0 10px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+
+}
+form  .name-details .field:first-child{
+    margin-right: 20px;
+}
+
+form  .name-details .field:last-child{
+    margin-left: 10px;
+
+}
+.form form .field label{
+    margin-bottom: 2px;
+}
+.form form .image input{
+    font-size:17px;
+
+}
+.form form .button input{
+    margin-top: 17px;
+    height:45px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    background:#333;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+
+.form .link{
+    margin:10px 0;
+    font-size:17px;
+
+}
+.form .link a{
+    color:#333;
+}
+.form .link a:hover{
+    text-decoration: underline;
+
+}
+
+.form form .field i{
+    position: absolute;
+    right:15px;
+	top:40px;
+    color:70%;
+    transform: translateY(-50%);
+}
+/* uses css styling*/
+.users .search{
+	margin:20px 0;
+	display:flex;
+	position:relative;
+	align-items:center;
+	justify-content:space-between;
+	height:42px;
+}
+.users .search .text{
+	font-size:18px;
+} .
+.users .search input{
+	position:absolute;
+	height:42px;
+	width:calc(100%-40px);
+	border:1px solid #ccc;
+	padding:0  13px;
+	font-size:16px;
+	border-radius:5px 0 0 5px;
+	outline:none;
+	opacity:0;
+	pointer-events:none;
+	
+	
+}
+.users .search button.active i::before{
+	content:"\f00d";
+	
+}
+.users .search button.active{
+	color:#fff;
+	background:#333;
+}
+
+.users .search button{
+	width:47px;
+	height:42px;
+	border:none;
+	color:#333;
+	background:#fff;
+	cursor:pointer;
+	font-size:17px;
+	border-radius:0 5px 5px 0;
+	transition:all 0.3s ease;
+	
+}
+.users .search input.active{
+/*opacity:0;
+    pointer-events:auto;*/
+	background:green;
+	
+	
+}
+
+.users{
+    padding:25px 30px
+}
+.users header{
+    display:flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-items: space-between;
+    border-bottom:1px solid #e6e6e6;
+   
+}
+:is(.users,.users-list).content{
+    display:flex;
+	align-items:center;
+
+}
+.users header .content{
+    display:flex;
+
+
+}
+:is(.users,.users-list) .details{
+    margin-left:15px;
+    color:#000;
+}
+:is(.users,.users-list) .details span{
+    font-size: 18px;
+    font-weight: 500;
+	
+
+}
+.form form .field i.active::before{
+	content:"\f070";
+	color:#333;
+}
+
+.users header .content img{
+    height:50px;
+    width:50px;
+
+}
+.wrapper img{
+    object-fit:cover;
+    border-radius:50%;
+}
+.users header .logout{
+   
+    background: #333;
+    color: #fff;
+    font-size:17px;
+    font-weight: 500;
+   position: static;
+   margin-left: 150px;
+   
+   border-radius: 5px;
+  height:30px;
+   align-items: center;
+   justify-content: space-between;
+}
+.users-list a .content img{
+	width:40px;
+	height:40px;
+}
+.users-list a .content{
+	display:flex;
+}
+.users-list a .status-dot{
+	font-size:12px;
+	color:#468669;
+	margin:-5px 10px 10px 95%;
+	}
+	.users-list a .status-dot.offline{
+		color:#ccc;
+	}
+.users-list{
+	max-height:350px;
+	overflow-y:auto;
+}
+:is(.chat-box,.users-list).users-list::webkit-Scrollbar{
+	width:0px;
+	
+}
+.users-list a {
+	padding-right:15px;
+	padding-top:10px;
+	margin-bottom:15px;
+	page-break-after:10px;
+	border-bottom-color:#f1f1f1;
+	
+}
+
+/* char area */
+.chat-area header{
+display:flex;
+align-items:center;
+padding:18px 30px;
+}
+.chat-area header .back-icon{
+	font-size:18px;
+	color:#333;
+}
+.chat-area header img{
+	height:45px;
+	width:45px;
+	margin:0 15px;
+}
+.chat-area header span{
+	font-size:17px;
+	font-weight:500;
+	
+}
+.chat-box .chat{
+	margin:15px 0;
+}
+.chat-box{
+	height:500px;
+	overflow-y:auto;
+	background:#f7f7f7;
+	padding:10px 30px 20px 30px;
+	box-shadow:inset 0 32px 32px -32px  rgb(0 0 0 / 5%),
+	             inset 0 -32px 32px -32px  rgb(0 0 0 / 5%),
+	
+}
+.chat-box .outgoing{
+	display:flex;
+}
+.outgoing .details p{
+	background:#333;
+	color:#fff;
+	border-radius:18px 18px 0 18px;
+}
+.chat-box .chat p{
+	padding:8px 16px;
+	width:250px;
+	box-shadow: 0  0 32px   rgb(0 0 0 / 8%),
+	              0 16px 16px -16px  rgb(0 0 0 / 10%);
+	word-wrap:break-word;
+	
+	
+}
+.outgoing .details{
+	max-width:calc(100%-130px);
+	margin-left:auto;
+}
+.chat-box .incoming{
+	display:flex;
+	align-items:center;
+}
+.chat-box .incoming img{  
+	height:35px;
+	width:35px;
+	
+}
+.incoming .details{
+	margin-left:10px;
+	max-width:calc(100%-130px);
+	margin-right:auto;
+	
+}
+.incoming .details p{
+	background:#fff;
+	border-radius:18px 18px 18px 0px;
+	margin-top:8px;
+	color:#333;
+	width:250px;
+}
+.chat-area .typing-area{
+	padding:18px 30px;
+	justify-content:space-between;
+	display:flex;
+	
+}
+.typing-area input{
+	height:45px;
+	width:calc(100%-59px);
+	width:329px;
+	font-size:17px;
+	padding:0 13px;
+	border-radius:5px 0 0 5px;
+	border:1px solid #ccc;
+	outline:none;
+	
+}
+.typing-area button{
+	width:55px;
+	border:none;
+	outline:none;
+	background:#333;
+	color:#fff;
+	font-size:19px;
+	cursor:pointer;
+	border-radius:0 5px 5px 0;
+}
+
+
